@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
+typedef tree<int,null_type,less<int>,rb_tree_tag,tree_order_statistics_node_update> ordered_set;
+typedef long long ll;
+typedef pair<ll,ll> pll;
+typedef pair<ll,int> pli;
+typedef pair<int,ll> pil;
+typedef pair<int,int> pii;
+const ll INFLL=1e18+7;
+const int INF=1e9+7;
+#define pb push_back
+int main()
+{
+	ios_base::sync_with_stdio(0);
+	int a,b; cin>>a>>b;
+	if(a<b) swap(a,b);
+	if(a==b){
+		cout<<"2";
+		for(int i=0;i<a;++i) cout<<"0";
+		cout<<"\n";
+		return 0;
+	}
+	cout<<"1";
+	for(int i=0;i<a-b-1;++i) cout<<"0";
+	cout<<"1";
+	for(int i=0;i<b;++i) cout<<"0";
+	cout<<"\n";
+}
