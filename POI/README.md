@@ -1,4 +1,4 @@
-# POI
+# Polish Olympiad in Informatics
 My solutions to problems from the Polish Olympiad in Informatics
 
 I also made a link finder script in python to automatically add a comment with a link to the statement to every task.
